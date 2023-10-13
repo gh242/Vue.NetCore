@@ -1,0 +1,274 @@
+{
+	"pages": [ //pages數組中第一項表示應用啟動頁，參考：https://uniapp.dcloud.io/collocation/pages{
+		{
+			"path": "pages/home/home",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"navigationBarTextStyle": "white",
+				"navigationBarBackgroundColor": "#00aaff",
+				"app-plus": { // 隱藏系統導航欄
+					"titleNView": false
+				},
+				"navigationStyle": "custom" //添加自定義配置
+			}
+		},
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"app-plus": { // 隱藏系統導航欄
+					"titleNView": false
+				}
+			}
+
+		},
+		{
+			"path": "pages/menu/menu",
+			"style": {
+				"navigationBarTitleText": "菜單",
+				"enablePullDownRefresh": false,
+				"navigationBarTextStyle": "white",
+				"navigationBarBackgroundColor": "#00aaff"
+			}
+
+		},
+		{
+			"path": "pages/form/form",
+			"style": {
+				"navigationBarTitleText": "統計",
+				"enablePullDownRefresh": false,
+				"navigationBarTextStyle": "white",
+				"navigationBarBackgroundColor": "#00aaff"
+			}
+		},
+		{
+			"path": "pages/message/message",
+			"style": {
+				"navigationBarTitleText": "消息",
+				"enablePullDownRefresh": false,
+				"navigationBarTextStyle": "white",
+				"navigationBarBackgroundColor": "#00aaff"
+			}
+		},
+		{
+			"path": "pages/user/user",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"navigationBarTextStyle": "white",
+				"navigationBarBackgroundColor": "#00aaff",
+				"app-plus": { // 隱藏系統導航欄
+					"titleNView": false
+				},
+				"navigationStyle": "custom" //添加自定義配置
+			}
+		},
+		{
+			"path": "pages/user/about/about",
+			"style": {
+				"navigationBarTitleText": "關於vol",
+				"enablePullDownRefresh": false,
+				"navigationBarTextStyle": "white",
+				"navigationBarBackgroundColor": "#00aaff"
+			}
+		}, {
+			"path": "pages/user/modifyPwd/modifyPwd",
+			"style": {
+				"navigationBarTitleText": "修改密碼",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/order/App_Appointment/App_Appointment",
+			"style": {
+				"navigationBarTitleText": "只讀頁面"
+			}
+		}, {
+			"path": "pages/order/App_Appointment1/App_Appointment1",
+			"style": {
+				"navigationBarTitleText": "水平顯示"
+			}
+		}, {
+			"path": "pages/appmanager/App_TransactionAvgPrice/App_TransactionAvgPrice",
+			"style": {
+				"navigationBarTitleText": "自動綁定下拉框"
+			}
+		}, {
+			"path": "pages/appmanager/App_Transaction/App_Transaction",
+			"style": {
+				"navigationBarTitleText": "下拉框事件"
+			}
+		}, {
+			"path": "pages/appmanager/App_Transaction1/App_Transaction1",
+			"style": {
+				"navigationBarTitleText": "格式化自定義樣式"
+			}
+		}, {
+			"path": "pages/order/SellOrder/SellOrder",
+			"style": {
+				"navigationBarTitleText": "主從表"
+			}
+		}, {
+			"path": "pages/order/SellOrder/Detail/Detail",
+			"style": {
+				"navigationBarTitleText": "訂單詳情"
+			}
+		}, {
+			"path": "pages/form/form1",
+			"style": {
+				"navigationBarTitleText": "表單vol-form",
+				"enablePullDownRefresh": false
+			}
+		}, {
+			"path": "pages/form/form2",
+			"style": {
+				"navigationBarTitleText": "只讀表單vol-form",
+				"enablePullDownRefresh": false
+			}
+		}, {
+			"path": "pages/table/table1/table1",
+			"style": {
+				"navigationBarTitleText": "table水平顯示",
+				"enablePullDownRefresh": false
+			}
+		}, {
+			"path": "pages/table/table2/table2",
+			"style": {
+				"navigationBarTitleText": "table列表顯示",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/table/table3/table3",
+			"style": {
+				"navigationBarTitleText": "table手動綁定數據",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/pagedemo/pagedemo",
+			"style": {
+				"navigationBarTitleText": "完整擴展頁面",
+				"enablePullDownRefresh": false
+			}
+		}, {
+			"path": "pages/message/detail/detail",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/form/charts/chart1",
+			"style": {
+				"navigationBarTitleText": "圖表",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/order/SellOrder/SellOrderAduit",
+			"style": {
+				"navigationBarTitleText": "審核",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/map/map",
+			"style": {
+				"navigationBarTitleText": "地圖",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/table/table4/table4",
+			"style": {
+				"navigationBarTitleText": "自定義table内容一",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/table/table5/table5",
+			"style": {
+				"navigationBarTitleText": "自定義table内容二",
+				"enablePullDownRefresh": false
+			}
+
+		}
+	    ,{
+            "path" : "pages/flow/flow",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "審批流程",
+                "enablePullDownRefresh": false
+            }
+            
+        },{
+            "path" : "pages/flow/audit/audit",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "審批",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	//底部圖標庫(需要授權的自行聯系作者)：https://www.iconfont.cn/search/index
+	"tabBar": { //設置要與第一個pages的path相同
+		"color": "#535353",
+		"selectedColor": "#2f92f9",
+		"fontSize": "12px",
+		"borderStyle": "white", //"white",//#e8e8e8",// "black",
+		"backgroundColor": "#ffffff",
+		"list": [{
+				"pagePath": "pages/home/home",
+				"iconPath": "static/icons/home.png",
+				"selectedIconPath": "static/icons/home_active.png",
+				"text": "首頁"
+			},
+			{
+				"pagePath": "pages/menu/menu",
+				"iconPath": "static/icons/menu.png",
+				"selectedIconPath": "static/icons/menu_active.png",
+				"text": "菜單"
+			},
+			{
+				"pagePath": "pages/flow/flow",
+				"iconPath": "static/icons/stats.png",
+				"selectedIconPath": "static/icons/stats_active.png",
+				"text": "審批流程"
+			},
+			{
+				"pagePath": "pages/message/message",
+				"iconPath": "static/icons/message.png",
+				"selectedIconPath": "static/icons/message_active.png",
+				"text": "消息"
+			},
+			{
+				"pagePath": "pages/user/user",
+				"iconPath": "static/icons/user.png",
+				"selectedIconPath": "static/icons/user_active.png",
+				"text": "消息"
+			}
+		]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#00aaff",
+		"navigationBarTextStyle": "white",
+		"backgroundColor": "#FFFFFF"
+	},
+	"easycom": {
+		"autoscan": true,
+		"custom": {
+			"^vol-(.*)": "@/components/vol-$1/vol-$1.vue",
+			"^view-(.*)": "@/components/view-$1/view-$1.vue"
+			// ,
+			// "^grid-(.*)": "@/pages/menu/grid-$1.vue"
+
+		}
+	}
+}

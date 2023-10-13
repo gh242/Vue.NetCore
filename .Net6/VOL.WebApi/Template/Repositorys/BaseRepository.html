@@ -1,0 +1,24 @@
+﻿/*
+ *代碼由框架生成,任何更改都可能導致被代碼生成器覆蓋
+ *Repository提供數據庫操作，如果要增加數據庫操作請在當前目錄下Partial文件夾{TableName}Repository編寫代碼
+ */
+using {Namespace}.IRepositories;
+using {StartName}.Core.BaseProvider;
+using {StartName}.Core.EFDbContext;
+using {StartName}.Core.Extensions.AutofacManager;
+using {StartName}.Entity.DomainModels;
+
+namespace {Namespace}.Repositories
+{
+    public partial class {TableName}Repository : RepositoryBase<{TableName}> , I{TableName}Repository
+    {
+    public {TableName}Repository(VOLContext dbContext)
+    : base(dbContext)
+    {
+
+    }
+    public static I{TableName}Repository Instance
+    {
+      get {  return AutofacContainerModule.GetService<I{TableName}Repository>(); } }
+    }
+}

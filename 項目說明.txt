@@ -1,0 +1,12 @@
+Vol.Vue3：為前端項目，vol.vue為vue2版本不再更新，只維護，請使用vol.vue3版本
+Vol.Net：為後台項目
+
+DB提供了mysql與sqlserver數據庫腳本，腳本裡包括表結構與Insert數據
+執行腳本時，先提前創建一個數據庫，數據庫名：netcoredev
+
+EntityFramework Core3.1不再支持 Sqlserver2008，請使用2008以上的數據庫或使用mysql
+
+
+
+
+

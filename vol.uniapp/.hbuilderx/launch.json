@@ -1,0 +1,20 @@
+{ // launch.json 配置了啟動調試時相關設置，configurations下節點名稱可為 app-plus/h5/mp-weixin/mp-baidu/mp-alipay/mp-qq/mp-toutiao/mp-360/
+  // launchtype項可配置值為local或remote, local代表前端連本地雲函數，remote代表前端連雲端雲函數
+    "version": "0.0",
+    "configurations": [{
+     	"app-plus" : 
+     	{
+     		"launchtype" : "local"
+     	},
+     	"default" : 
+     	{
+     		"launchtype" : "local"
+     	},
+     	"mp-weixin" : 
+     	{
+     		"launchtype" : "local"
+     	},
+     	"type" : "uniCloud"
+     }
+    ]
+}

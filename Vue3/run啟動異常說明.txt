@@ -1,0 +1,18 @@
+雙擊run.bat啟動異常：
+    使用cmd輸入node -v查看版本，如果是18.+版本,請將package.json中第五行scripts中的内容替換為：
+
+"scripts": {
+    "serve": " SET NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service serve",
+    "build": "SET NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service build",
+    "test:unit": "vue-cli-service test:unit",
+    "lint": "vue-cli-service lint"
+}
+
+
+原來的：
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "test:unit": "vue-cli-service test:unit",
+    "lint": "vue-cli-service lint"
+  },

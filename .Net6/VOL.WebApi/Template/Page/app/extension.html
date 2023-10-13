@@ -1,0 +1,100 @@
+//************************************************
+//  *Author：jxx
+//  *QQ：283591387
+//  *自定義業務邏輯擴展
+//************************************************
+export default function() {
+	return {
+		methods: {
+			onInited() { //頁面參數初始化
+				//設置table超出換行顯示
+				//this.textInline = false;
+
+				//設置列寬度
+				//this.columns[1].width = 70;
+
+				//設置table為水平顯示或者list列表顯示
+				//this.direction = 'horizontal'//list
+				//如果為list列表顯示，指定list的標題列
+				//this.titleField="字段";
+
+				//設置自定義格式顯示
+				//this.columns.forEach(column=>{
+				// 	if(column.field=='字段'){
+                //      //自定義格式化顯示,在下面的formatter實現具體邏輯
+				// 		//column.formatter=true;
+
+                //      //開啟table單元格點擊事件(僅設置this.direction = 'horizontal屬性後生效)
+                //      column.click=true;
+
+                //      //指定字段為date類型不顯示時分秒
+                //      //column.type="date";
+                //      //設置列寬度
+				//      //column.width = 70;
+				// 	}
+				// })
+
+				//頁面打開時禁用加載數據
+				//this.load=false;
+				//頁面打開時默認彈出查詢框
+				//this.searchModel = true;
+			},
+			formatter(row, column,index) { //自定義格式化
+				// if(column.field=='xx'){
+				//  return '<a style="color:red;">' + row[column.field] + '</a>';
+				// }
+				//return row[column.field]
+			},
+			rowClick(index, row, column) { //行點擊事件(默認觸發編輯)
+				return true;
+			},
+            cellClick(index, row, column) { //單元格擊事件(默認觸發編輯)
+			    //僅onInited中設置：this.direction = "horizontal", this.columns的字段設置為click=true後生效
+				return true;
+			},
+			rowButtons(index, row) { //列表顯示的按鈕
+				//自定義按鈕,僅onInited中設置：this.direction = "list"後生效
+				// return [{
+				// 	text: "測試",
+				// 	icon: "edit-pen",
+				// 	type: "primary",
+				// 	plain:true,
+				// 	shape:"circle",
+				// 	disabled: false
+				// },{
+				// 	text: "刪除",
+				// 	icon: "trash",
+				// 	type: "error",
+				// 	plain:true,
+				// 	shape:"circle",
+				// 	//shape:"",//square、circle
+				// 	disabled: false
+				// }];
+			},
+			rowButtonClick(btn,index, row){ //列表顯示的按鈕點擊事件
+			 //    if(btn.text=='刪除'){
+				// 	this.$toast('刪除')
+				// }
+			},
+			searchBefore(params){ //查詢前
+				return true;
+			},
+			updateBefore(formData) { //更新保存前操作
+				return true;
+			},
+			addBefore(formData) {//新建保存前操作
+				return true;
+			},
+	        searchFormOnChange(field,value){ //查詢彈出框下拉框或日期選中事件
+				//if(field=="字段"){
+                // 	console.log(value)
+				//}
+			},
+			editFormOnChange(field,value){ //新建編輯彈出框下拉框或日期選中事件
+				//if(field=="字段"){
+                // 	console.log(value)
+				//}
+			},
+		}
+	}
+}
